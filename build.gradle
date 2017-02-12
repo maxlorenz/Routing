@@ -1,0 +1,19 @@
+group 'GreenNav'
+version '0.1'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.openstreetmap.osmosis:osmosis-pbf:0.45'
+    compile 'org.openstreetmap.osmosis:osmosis-pbf2:0.45'
+    compile 'org.openstreetmap.osmosis:osmosis-core:0.45'
+
+    testCompile 'junit:junit:4.12'
+}
